@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A80C61B21E1F591003E83A2 /* LXRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80C61A21E1F591003E83A2 /* LXRefresh.swift */; };
 		92546A4C1F877E38004606B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92546A4B1F877E38004606B7 /* AppDelegate.swift */; };
 		92546A4E1F877E38004606B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92546A4D1F877E38004606B7 /* ViewController.swift */; };
 		92546A511F877E38004606B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92546A4F1F877E38004606B7 /* Main.storyboard */; };
 		92546A531F877E38004606B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92546A521F877E38004606B7 /* Assets.xcassets */; };
 		92546A561F877E38004606B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92546A541F877E38004606B7 /* LaunchScreen.storyboard */; };
+		D70E4BB691E48ED1DDF0A46B /* LXRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E46951D4814D14E46EECC /* LXRefreshHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A80C61A21E1F591003E83A2 /* LXRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXRefresh.swift; sourceTree = "<group>"; };
 		92546A481F877E38004606B7 /* LXRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92546A4B1F877E38004606B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92546A4D1F877E38004606B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		92546A521F877E38004606B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92546A551F877E38004606B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92546A571F877E38004606B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70E46951D4814D14E46EECC /* LXRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXRefreshHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A80C61921E1F569003E83A2 /* LXRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				5A80C61A21E1F591003E83A2 /* LXRefresh.swift */,
+				D70E46951D4814D14E46EECC /* LXRefreshHeader.swift */,
+			);
+			path = LXRefresh;
+			sourceTree = "<group>";
+		};
 		92546A3F1F877E38004606B7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,20 +67,13 @@
 		92546A4A1F877E38004606B7 /* LXRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				92546A5D1F877E58004606B7 /* LXRefresh */,
+				5A80C61921E1F569003E83A2 /* LXRefresh */,
 				92546A4B1F877E38004606B7 /* AppDelegate.swift */,
 				92546A4D1F877E38004606B7 /* ViewController.swift */,
 				92546A4F1F877E38004606B7 /* Main.storyboard */,
 				92546A521F877E38004606B7 /* Assets.xcassets */,
 				92546A541F877E38004606B7 /* LaunchScreen.storyboard */,
 				92546A571F877E38004606B7 /* Info.plist */,
-			);
-			path = LXRefresh;
-			sourceTree = "<group>";
-		};
-		92546A5D1F877E58004606B7 /* LXRefresh */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = LXRefresh;
 			sourceTree = "<group>";
@@ -99,11 +105,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = zysios;
 				TargetAttributes = {
 					92546A471F877E38004606B7 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92546A4E1F877E38004606B7 /* ViewController.swift in Sources */,
+				5A80C61B21E1F591003E83A2 /* LXRefresh.swift in Sources */,
 				92546A4C1F877E38004606B7 /* AppDelegate.swift in Sources */,
+				D70E4BB691E48ED1DDF0A46B /* LXRefreshHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +194,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -192,6 +202,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -242,6 +253,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -249,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -288,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zys.LXRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,7 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zys.LXRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
